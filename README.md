@@ -92,5 +92,12 @@ Therefore, this is how the CNN has integrated the two models. ResNet-18’s hidd
 
 #### <ins>Example of random image being classified:</ins>
 <img width="350" height="360" alt="image" src="https://github.com/user-attachments/assets/977774ec-9549-4832-8ab8-e7dddbe06740" />
+(Probability of 0.91 represents certainty of classification)
 
+## Training and Results
+During the training epochs, the loss function and the accuracy on both the training and testing datasets were plotted. The blue line represents when the model was applied on simple, un-augmented data, and the orange line shows when the model was applied on augmented data.
+
+<img width="281" height="187" alt="image" src="https://github.com/user-attachments/assets/0b3f615e-91cf-47a8-a986-503e94ef9191" />
+
+(Here, Model 1 coloured in orange uses augmented data)
 
