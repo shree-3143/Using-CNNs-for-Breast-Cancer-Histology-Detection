@@ -48,5 +48,5 @@ I have used ResNet-18 as my feature extractor - to identify the patterns in the 
 The final, fully connected layer is the classifier head. I have constructed the classifier head design similar to TinyVGG’s FC layer. This is a dense layer in which the data is flattened, features are mapped into a smaller space (the same way this is done throughout the previous layers). the ReLu activation function is used between layers, and a class prediction is outputted at the end.
 
 <img width="490" height="200" alt="image" align="left" src="https://github.com/user-attachments/assets/ee6dddee-ee55-48f8-8a0d-7b836a67b256" />
-<img width="400" height="200" alt="image" align="right" src="https://github.com/user-attachments/assets/3c141ec6-3806-47e1-b8bd-cece1e1f5c0a" />
+<img width="490" height="200" alt="image" align="right" src="https://github.com/user-attachments/assets/3c141ec6-3806-47e1-b8bd-cece1e1f5c0a" />
 
