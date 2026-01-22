@@ -87,5 +87,9 @@ Therefore, this is how the CNN has integrated the two models. ResNet-18’s hidd
 #### <ins>Original images vs. Augmented Data:</ins>
 <img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/929f114e-c092-4426-8fb3-0bf663c6d57d" />
 
+#### <ins>Accuracy and Loss curves for CNN trained on original images (un-augmented data):</ins>
+<img width="550" height="200" alt="image" src="https://github.com/user-attachments/assets/8346b0f6-a123-4674-81ee-c49634f8dc4f" />
+
+
 
 
