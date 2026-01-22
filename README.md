@@ -76,7 +76,7 @@ Therefore, this is how the CNN has integrated the two models. ResNet-18’s hidd
 
    This meant that instead of selecting all the layers from ResNet except for the last prediction layer, I was selecting only the last layer, which meant that I had no feature extraction being performed. Without any feature extraction, the dataset was being classified using the final FC classification layer from ResNet-18, and then again with the TinyVGG inspired classifier head.
 
-   <img width="900" height="200" alt="image" src="https://github.com/user-attachments/assets/def57f34-a513-4930-8cf5-7bad77a9f2fd" />
+   <img width="900" height="350" alt="image" src="https://github.com/user-attachments/assets/def57f34-a513-4930-8cf5-7bad77a9f2fd" />
 
    This dropped my accuracy down to about 20% on the training data, proving the importance of having adequate feature extraction. Once I fixed this typo the accuracy went up to 96% - meaning having a high performing feature extractor is crucial to achieve high classification accuracy. 
 
