@@ -69,5 +69,17 @@ Therefore, this is how the CNN has integrated the two models. ResNet-18’s hidd
    The process of converging towards a local minimum in gradient descent is often ineffective, when a relatively flat area in the loss function curve is reached. Gradient descent often gets stuck at a local minimum, instead of continuing to approach a lower global minimum instead.
 
    This means the algorithm gets trapped in a plateau or local minimum where the gradient is nearly zero, leading to very slow progress or no further improvement in performance. In the future, if I get a chance to write ResNet-18 from scratch, I hope to learn how to solve such an issue.
+3. ### Typo – when selecting layers of ResNet-18
+   As stated before, for the Hybrid CNN, I replaced only the last layer of ResNet-18 with a custom classifier head inspired by TinyVGG, which means I had to select all the layers up till the last layer.
+
+   I made a small typo here. Instead of writing what I should’ve written in the green, I had written what was in the red, without the colon that I should have included.
+
+   This meant that instead of selecting all the layers from ResNet except for the last prediction layer, I was selecting only the last layer, which meant that I had no feature extraction being performed. Without any feature extraction, the dataset was being classified using the final FC classification layer from ResNet-18, and then again with the TinyVGG inspired classifier head.
+
+   <img width="900" height="200" alt="image" src="https://github.com/user-attachments/assets/def57f34-a513-4930-8cf5-7bad77a9f2fd" />
+
+   This dropped my accuracy down to about 20% on the training data, proving the importance of having adequate feature extraction. Once I fixed this typo the accuracy went up to 96% - meaning having a high performing feature extractor is crucial to achieve high classification accuracy. 
+
+
 
 
