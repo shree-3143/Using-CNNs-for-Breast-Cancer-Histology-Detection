@@ -32,6 +32,6 @@ This is a problem that arises when the gradients become very small as they are p
 
 In a normal CNN, the output of the previous layer is taken, and is replaced with something completely new in the next layer - each layer transforms the results, meaning you lose the original input by the time you get to the end. In ResNet, you keep the original input, and add it back later after going through some layers.
 
-<img width="400" height="100" alt="image" src="https://github.com/user-attachments/assets/cbf7d3b3-816b-4286-8ab6-0148984b4127" />
+<img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/cbf7d3b3-816b-4286-8ab6-0148984b4127" />
 
 
