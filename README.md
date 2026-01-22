@@ -55,5 +55,6 @@ Essentially, I replaced the last FC from ResNet-18 with a classifier that is per
 ResNet-18 is originally pretrained on the ImageNet dataset, which has a 1000 output classes. However, we are not aiming for multi-class classification in this project, so for binary classification, it is optimal to utilise a personally developed classifier head - especially to prevent overfitting.
 
 
-### <ins> Final hybrid CNN </ins>– combining ResNet feature extractor and custom classifier head
+### <ins>Final hybrid CNN</ins>– combining ResNet feature extractor and custom classifier head
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/1e39d5b1-72f0-47ec-ab75-b3cf213bdd4c" />
 
