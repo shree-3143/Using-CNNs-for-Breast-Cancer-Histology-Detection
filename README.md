@@ -33,7 +33,7 @@ This is a problem that arises when the gradients become very small as they are p
 In a normal CNN, the output of the previous layer is taken, and is replaced with something completely new in the next layer - each layer transforms the results, meaning you lose the original input by the time you get to the end. In ResNet, you keep the original input, and add it back later after going through some layers.
 
 
-<img width="1000" height="300" alt="image" src="[https://github.com/user-attachments/assets/cbf7d3b3-816b-4286-8ab6-0148984b4127](https://www.researchgate.net/publication/336642248/figure/fig1/AS:839151377203201@1577080687133/Original-ResNet-18-Architecture.png)" />
+<img width="800" height="250" alt="image" src="https://github.com/user-attachments/assets/b6bd35c0-903b-4f13-a3e9-e068f844464c" />
 
 This creates a shortcut called a skip connection - and these are the arrows that show this. So, these arrows mean that the input is added back after a couple of convolutions.
 
@@ -45,5 +45,8 @@ The residual blocks ensure that important information is preserved instead of ac
 I have used ResNet-18 as my feature extractor - to identify the patterns in the image. I’ve implemented all layers up till the last hidden, Fully Connected (FC) layer.
 
 #### Tiny-VGG Inspired Classifier
+The final, fully connected layer is the classifier head. I have constructed the classifier head design similar to TinyVGG’s FC layer. This is a dense layer in which the data is flattened, features are mapped into a smaller space (the same way this is done throughout the previous layers). the ReLu activation function is used between layers, and a class prediction is outputted at the end.
 
+<img width="500" height="100" alt="image" align="left" src="https://github.com/user-attachments/assets/ee6dddee-ee55-48f8-8a0d-7b836a67b256" />
+<img width="500" height="100" alt="image" align="right" src="https://github.com/user-attachments/assets/3c141ec6-3806-47e1-b8bd-cece1e1f5c0a" />
 
