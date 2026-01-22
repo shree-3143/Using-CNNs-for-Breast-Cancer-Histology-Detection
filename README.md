@@ -50,3 +50,10 @@ The final, fully connected layer is the classifier head. I have constructed the 
 <img width="480" height="200" alt="image" align="left" src="https://github.com/user-attachments/assets/ee6dddee-ee55-48f8-8a0d-7b836a67b256" />
 <img width="490" height="200" alt="image" align="right" src="https://github.com/user-attachments/assets/3c141ec6-3806-47e1-b8bd-cece1e1f5c0a" />
 
+Essentially, I replaced the last FC from ResNet-18 with a classifier that is personally developed, and inspired by TinyVGG. My classifier is simpler than ResNet’s original FC layer.
+
+ResNet-18 is originally pretrained on the ImageNet dataset, which has a 1000 output classes. However, we are not aiming for multi-class classification in this project, so for binary classification, it is optimal to utilise a personally developed classifier head - especially to prevent overfitting.
+
+
+#### <u> Final hybrid CNN </u> – combining ResNet feature extractor and custom classifier head
+
