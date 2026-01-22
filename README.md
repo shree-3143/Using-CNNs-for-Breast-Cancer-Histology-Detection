@@ -61,15 +61,15 @@ ResNet-18 is originally pretrained on the ImageNet dataset, which has a 1000 out
 Therefore, this is how the CNN has integrated the two models. ResNet-18’s hidden layers have been utilized for the feature extraction, up till the last Fully Connected (FC) layer (meaning ResNet-18’s last layer has not been used). The final classification layer of ResNet-18 has been replaced with the TinyVGG inspired classifier head. 
 
 ## Challenges designing and building the project
-1. ### Vanishing gradient problem **
+### 1. Vanishing gradient problem **
    Explanation provided in the outline of the ResNet-18 architecture above.
-2. ### Gradient descent stagnation problem (potential issue in future)
+### 2. Gradient descent stagnation problem (potential issue in future)
    One of the most well-known issues with gradient descent in backpropagation is something I might only face when I build ResNet entirely from scratch, instead of utilizing the pre-trained model.
 
    The process of converging towards a local minimum in gradient descent is often ineffective, when a relatively flat area in the loss function curve is reached. Gradient descent often gets stuck at a local minimum, instead of continuing to approach a lower global minimum instead.
 
    This means the algorithm gets trapped in a plateau or local minimum where the gradient is nearly zero, leading to very slow progress or no further improvement in performance. In the future, if I get a chance to write ResNet-18 from scratch, I hope to learn how to solve such an issue.
-3. ### Typo – when selecting layers of ResNet-18
+### 3. Typo – when selecting layers of ResNet-18
    As stated before, for the Hybrid CNN, I replaced only the last layer of ResNet-18 with a custom classifier head inspired by TinyVGG, which means I had to select all the layers up till the last layer.
 
    I made a small typo here. Instead of writing what I should’ve written in the green, I had written what was in the red, without the colon that I should have included.
