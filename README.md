@@ -91,6 +91,6 @@ Therefore, this is how the CNN has integrated the two models. ResNet-18’s hidd
 <img width="650" height="350" alt="image" src="https://github.com/user-attachments/assets/8346b0f6-a123-4674-81ee-c49634f8dc4f" />
 
 #### <ins>Example of random image being classified:</ins>
-<img width="450" height="460" alt="image" src="https://github.com/user-attachments/assets/977774ec-9549-4832-8ab8-e7dddbe06740" />
+<img width="350" height="360" alt="image" src="https://github.com/user-attachments/assets/977774ec-9549-4832-8ab8-e7dddbe06740" />
 
 
