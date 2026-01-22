@@ -32,6 +32,18 @@ This is a problem that arises when the gradients become very small as they are p
 
 In a normal CNN, the output of the previous layer is taken, and is replaced with something completely new in the next layer - each layer transforms the results, meaning you lose the original input by the time you get to the end. In ResNet, you keep the original input, and add it back later after going through some layers.
 
-<img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/cbf7d3b3-816b-4286-8ab6-0148984b4127" />
+
+<img width="1000" height="300" alt="image" src="[https://github.com/user-attachments/assets/cbf7d3b3-816b-4286-8ab6-0148984b4127](https://www.researchgate.net/publication/336642248/figure/fig1/AS:839151377203201@1577080687133/Original-ResNet-18-Architecture.png)" />
+
+This creates a shortcut called a skip connection - and these are the arrows that show this. So, these arrows mean that the input is added back after a couple of convolutions.
+
+
+These skip connections give the model a kind of memory - avoiding information loss - by providing the network a reminder of where things started, so that deeper layers can decide what to keep and what to define. A residual block is the chunk of layers that add the input back in. Essentially, ResNet learns how to slightly tweak the input to produce the output, without learning all the patterns from scratch - which is way more efficient, and faster to train - meaning that you can train hundreds of layers and still improve performance, without worrying about stagnant progress, due to suffering from vanishing gradients.
+
+The residual blocks ensure that important information is preserved instead of accidentally forgotten or distorted by transformations, and also provide a safety net - if the network tries to make a change that hurts performance, it can “fall back” to the input and try again.
+
+I have used ResNet-18 as my feature extractor - to identify the patterns in the image. I’ve implemented all layers up till the last hidden, Fully Connected (FC) layer.
+
+#### Tiny-VGG Inspired Classifier
 
 
