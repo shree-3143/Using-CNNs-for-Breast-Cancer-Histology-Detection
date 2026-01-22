@@ -83,6 +83,7 @@ Therefore, this is how the CNN has integrated the two models. ResNet-18’s hidd
 ## Photos
 #### <ins>Tiny-VGG Inspired Classifier</ins>
 <img width="980" height="250" alt="image" src="https://github.com/user-attachments/assets/cf8611ac-9c0d-4e76-b87d-3514818e1e1a" />
+
 #### <ins>Original images vs. Augmented Data:</ins>
 <img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/929f114e-c092-4426-8fb3-0bf663c6d57d" />
 
