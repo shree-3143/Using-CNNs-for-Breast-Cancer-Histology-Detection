@@ -80,6 +80,10 @@ Therefore, this is how the CNN has integrated the two models. ResNet-18’s hidd
 
    This dropped my accuracy down to about 20% on the training data, proving the importance of having adequate feature extraction. Once I fixed this typo the accuracy went up to 96% - meaning having a high performing feature extractor is crucial to achieve high classification accuracy. 
 
+## Photos
+#### <ins>Tiny-VGG Inspired Classifier</ins>
+<img width="980" height="100" alt="image" src="https://github.com/user-attachments/assets/cf8611ac-9c0d-4e76-b87d-3514818e1e1a" />
+
 
 
 
