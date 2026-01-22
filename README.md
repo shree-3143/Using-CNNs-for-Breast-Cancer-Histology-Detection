@@ -26,5 +26,11 @@ The project implements a CNN. For my CNN, I have integrated two known models, ca
 
 #### ResNet-18 for feature extraction
 
+ResNet-18 is a pre-trained model that is especially good for histology dataset classification tasks – requiring deeper networks. It comprises of 18 convolutional layers, that utilise residual blocks to address the vanishing gradient problem * in deeper networks.
+
+This is a problem that arises when the gradients become very small as they are propagated through layers - often causing early layers to receive near-zero gradient updates. (i.e., When the gradients of multiple layers are multiplied together, the result is often incredibly close to zero - this is done when the chain rule is applied during backpropagation).
+
+In a normal CNN, the output of the previous layer is taken, and is replaced with something completely new in the next layer - each layer transforms the results, meaning you lose the original input by the time you get to the end. In ResNet, you keep the original input, and add it back later after going through some layers. 
+<img width="305" height="82" alt="image" src="https://github.com/user-attachments/assets/cbf7d3b3-816b-4286-8ab6-0148984b4127" />
 
 
