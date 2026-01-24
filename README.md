@@ -101,3 +101,15 @@ During the training epochs, the loss function and the accuracy on both the train
 
 (Here, Model 1 coloured in orange uses augmented data)
 
+The difference between these two types is that one only uses original images, with no transformations beyond essential resizing or normalisation - meaning the model might not generalise well with unseen data. Augmented data contains the transformed versions of these original images, like rotations, flips, etc.
+
+In this case, evidently, when the model was used with augmented data, a higher testing accuracy of about 96% was obtained - likely due to the ability to better generalise with unseen patterns after transformations are applied.
+
+### Statistics with model 0 (CNN trained on original images):
+<img width="225" height="111" alt="image" src="https://github.com/user-attachments/assets/db935d26-fe63-4ed3-9534-ae74539b8e56" />
+
+### Statistics with model 1 (CNN trained on augmented images):
+<img width="227" height="108" alt="image" src="https://github.com/user-attachments/assets/7fcd417f-6c1e-44f4-86a3-8988984f3d14" />
+
+
+
