@@ -117,10 +117,10 @@ The model attained about 96% accuracy on the testing data, when trained on augme
 Therefore, this project does effectively classify breast tissue as Malignant of Benign, with minor errors which can be mitigated in the future. 
 The assets I chose - like ResNet-18, and the BreakHis histology are highly effective. 
 
-•	The dataset used is well-curated for breast cancer detection
-•	ResNet’s deep layers and residual blocks enable strong feature extraction.
-•	The classifier head, built from integrated codes, is simple and interpretable.
-•	The graphs clearly visualise training metrics like accuracy and loss
+1. The dataset used is well-curated for breast cancer detection
+2. ResNet’s deep layers and residual blocks enable strong feature extraction.
+3. The classifier head, built from integrated codes, is simple and interpretable.
+4. The graphs clearly visualise training metrics like accuracy and loss.
 
 Understand how hidden layers extract features helped me replace ResNet’s final layer with a simpler one. Since, ResNet was pretrained for 1000 classes, but we only need binary classification, a smaller classifier helps prevent overfitting and improves generalisation. These choices all significantly enhanced the user’s experience, which is especially reflected in the model’s 96% testing accuracy. 
 In future, experimenting with different types of data augmentation, increasing the model’s ability to generalize on unseen data, could increase accuracy. Additionally, writing ResNet-18 from scratch, would allow me to experience issues with gradient descent stagnation and the vanishing gradient problem first hand – allowing me to thoroughly understand how ResNet’s residual blocks containing skip connections solves this issue. This could potentially allow me to develop something different to the ResNet structure which solves this problem to a greater extent, allowing for a higher accuracy to be achieved. 
