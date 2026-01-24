@@ -106,10 +106,10 @@ The difference between these two types is that one only uses original images, wi
 In this case, evidently, when the model was used with augmented data, a higher testing accuracy of about 96% was obtained - likely due to the ability to better generalise with unseen patterns after transformations are applied.
 
 ### Statistics with model 0 (CNN trained on original images):
-<img width="225" height="111" alt="image" src="https://github.com/user-attachments/assets/db935d26-fe63-4ed3-9534-ae74539b8e56" />
+<img width="325" height="211" alt="image" src="https://github.com/user-attachments/assets/db935d26-fe63-4ed3-9534-ae74539b8e56" />
 
 ### Statistics with model 1 (CNN trained on augmented images):
-<img width="227" height="108" alt="image" src="https://github.com/user-attachments/assets/7fcd417f-6c1e-44f4-86a3-8988984f3d14" />
+<img width="327" height="208" alt="image" src="https://github.com/user-attachments/assets/7fcd417f-6c1e-44f4-86a3-8988984f3d14" />
 
 
 
